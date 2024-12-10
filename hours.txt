@@ -1,0 +1,23 @@
+2 hours
+1 day
+1 day
+sun dec 22 4 hours
+
+-- 3 jours
+
+mon 23 dec 1 day
+wed 25 dec 4 hours
+wed 26 dec 4 hours
+
+-- 5 jours
+
+wed 27 dec 3 hours
+thu 2 jan 2 hours
+thu 2 jan 4 hours
+
+-- 6 jours
+
+done: finish formations
+todo: finish use form with good params
+todo: next on 1 line if alone + order by index
+todo: github with images per format

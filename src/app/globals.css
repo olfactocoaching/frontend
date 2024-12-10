@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html.light {
+    --color-primary: #68A94A;
+    --color-secondary: #fa9e6b;
+    /* https://www.hexcolortool.com/#ebfcca,0.94 */
+    --color-tertiary: #f2fddd;
+    --color-quaternary: #BB3ABA;
+    --color-default: #71717a;
+    --color-inactive: #9ca3af;
+    --color-background: #ffff;
+    --color-light-hover: #e4e4e7;
+    --color-very-light-hover: #f4f4f5;
+    --color-light-border: #e5e7eb;
+}
+
+html.dark {
+    --color-primary: #68A94A;
+    --color-secondary: #fa9e6b;
+    /* https://www.hexcolortool.com/#ebfcca,0.94 */
+    --color-tertiary: #f2fddd;
+    --color-quaternary: #BB3ABA;
+    --color-default: #71717a;
+    --color-inactive: #9ca3af;
+    --color-background: #ffff;
+    --color-light-hover: #e4e4e7;
+    --color-very-light-hover: #f4f4f5;
+    --color-light-border: #e5e7eb;
+}
+
+.cta-link-style {
+    @apply text-secondary hover:underline decoration-2 underline-offset-4
+}
+
+.default-link-style {
+    @apply hover:underline underline-offset-2 hover:text-secondary hover:decoration-2 text-inactive
+}
