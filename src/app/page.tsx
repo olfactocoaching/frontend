@@ -5,15 +5,12 @@ import SectionTitle from '@/components/app/SectionTitle'
 import ImageWrapper from '@/components/common/ImageWrapper'
 import LinkWrapper from '@/components/common/LinkWrapper'
 import PageWrapper from '@/components/common/PageWrapper'
-import { APP_METADATA, APP_PAGES } from '@/config/app.config'
+import { APP_PAGES } from '@/config/app.config'
 import { AppPagePaths, AppPhotoIds } from '@/enums'
-import { getPageConfig } from '@/utils'
-import { Metadata } from 'next'
+import { generatePageMetadata, getPageConfig } from '@/utils'
 
 const pagePath = AppPagePaths.ACCUEIL
-export const metadata: Metadata = {
-    title: `${APP_METADATA.SITE_NAME} | ${getPageConfig(pagePath).headerName}`,
-}
+export const metadata = generatePageMetadata(pagePath)
 
 export default function Page() {
     return (

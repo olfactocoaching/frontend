@@ -7,15 +7,12 @@ import Programme from '@/components/app/Programme'
 import LinkWrapper from '@/components/common/LinkWrapper'
 import MenuIndications from '@/components/common/MenuIndications'
 import PageWrapper from '@/components/common/PageWrapper'
-import { APP_METADATA, APP_SESSIONS, LIEN_DE_PAIEMENT } from '@/config/app.config'
+import { APP_SESSIONS, LIEN_DE_PAIEMENT } from '@/config/app.config'
 import { AppAuthors, AppFormationIds, AppPagePaths } from '@/enums'
-import { getPageConfig } from '@/utils'
-import { Metadata } from 'next'
+import { generatePageMetadata } from '@/utils'
 
 const pagePath = AppPagePaths.ZOOM_LES_BASES_OLFACTOTHERAPIE
-export const metadata: Metadata = {
-    title: `${APP_METADATA.SITE_NAME} | ${getPageConfig(pagePath).headerName}`,
-}
+export const metadata = generatePageMetadata(pagePath)
 
 export default function Page() {
     return (

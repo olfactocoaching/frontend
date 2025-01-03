@@ -4,15 +4,11 @@ import SectionTitle from '@/components/app/SectionTitle'
 import LinkWrapper from '@/components/common/LinkWrapper'
 import MenuIndication from '@/components/common/MenuIndication'
 import PageWrapper from '@/components/common/PageWrapper'
-import { APP_METADATA } from '@/config/app.config'
 import { AppPagePaths } from '@/enums'
-import { getPageConfig } from '@/utils'
-import { Metadata } from 'next'
+import { generatePageMetadata, getPageConfig } from '@/utils'
 
 const pagePath = AppPagePaths.STAGES
-export const metadata: Metadata = {
-    title: `${APP_METADATA.SITE_NAME} | ${getPageConfig(pagePath).headerName}`,
-}
+export const metadata = generatePageMetadata(pagePath)
 
 export default function Page() {
     return (

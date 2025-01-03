@@ -1,5 +1,6 @@
-import { APP_PAGES } from '@/config/app.config'
+import { APP_METADATA, APP_PAGES } from '@/config/app.config'
 import { AppAuthors, AppPagePaths } from '@/enums'
+import { Metadata } from 'next'
 
 export const isCurrentPath = (pathname: string, pagePath: string) => {
     if (pagePath === '/') return pathname === pagePath
@@ -17,3 +18,8 @@ export const getPageConfig = (path: AppPagePaths) => {
 }
 
 export const defaultAlt = (alt?: string) => alt ?? `Olfactocoaching: ${AppAuthors.ELISABETH_MOLINA} et ${AppAuthors.GILLES_FOURNIL}`
+
+export const generatePageMetadata = (pagePath: AppPagePaths): Metadata => ({
+    title: `${APP_METADATA.SITE_NAME} | ${getPageConfig(pagePath).headerName}`,
+    description: APP_METADATA.SITE_DESCRIPTION,
+})

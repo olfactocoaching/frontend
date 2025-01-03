@@ -3,15 +3,11 @@ import PageTitle from '@/components/app/PageTitle'
 import ImageWrapper from '@/components/common/ImageWrapper'
 import MenuIndications from '@/components/common/MenuIndications'
 import PageWrapper from '@/components/common/PageWrapper'
-import { APP_METADATA } from '@/config/app.config'
 import { AppPagePaths, AppPhotoIds } from '@/enums'
-import { getPageConfig } from '@/utils'
-import { Metadata } from 'next'
+import { generatePageMetadata } from '@/utils'
 
 const pagePath = AppPagePaths.MATERIEL_LE_COFFRET_DE_BASE_AVEC_LES_8_SYNERGIES
-export const metadata: Metadata = {
-    title: `${APP_METADATA.SITE_NAME} | ${getPageConfig(pagePath).headerName}`,
-}
+export const metadata = generatePageMetadata(pagePath)
 export default function Page() {
     return (
         <PageWrapper>

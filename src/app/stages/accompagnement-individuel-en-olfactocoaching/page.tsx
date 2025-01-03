@@ -9,15 +9,12 @@ import ImageWrapper from '@/components/common/ImageWrapper'
 import LinkWrapper from '@/components/common/LinkWrapper'
 import MenuIndications from '@/components/common/MenuIndications'
 import PageWrapper from '@/components/common/PageWrapper'
-import { APP_METADATA, APP_SESSIONS, LIEN_DE_PAIEMENT } from '@/config/app.config'
+import { APP_SESSIONS, LIEN_DE_PAIEMENT } from '@/config/app.config'
 import { AppAuthors, AppFormationIds, AppPagePaths, AppPhotoIds } from '@/enums'
-import { getPageConfig } from '@/utils'
-import { Metadata } from 'next'
+import { generatePageMetadata } from '@/utils'
 
 const pagePath = AppPagePaths.ACCOMPAGNEMENT_INDIVIDUEL
-export const metadata: Metadata = {
-    title: `${APP_METADATA.SITE_NAME} | ${getPageConfig(pagePath).headerName}`,
-}
+export const metadata = generatePageMetadata(pagePath)
 
 export default function Page() {
     return (
