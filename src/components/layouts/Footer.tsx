@@ -25,7 +25,7 @@ export default function Footer(props: { className?: string }) {
                         </LinkWrapper>
                     ))}
                 </div>
-                <p className="mt-2 font-bold text-quaternary">Version du site: v1 déployée le {dayjs('2024-03-01').format('MM/DD/YYYY')}</p>
+                <p className="mt-2 font-bold text-quaternary">Version 1 déployée le {dayjs('2024-03-01').format('MM/DD/YYYY')}</p>
             </div>
             <Image
                 src={APP_PHOTOS[AppPhotoIds.OLFACTOCOACHING_FLEUR].src}

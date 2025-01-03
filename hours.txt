@@ -2,22 +2,50 @@
 1 day
 1 day
 sun dec 22 4 hours
-
--- 3 jours
-
 mon 23 dec 1 day
 wed 25 dec 4 hours
 wed 26 dec 4 hours
-
--- 5 jours
-
 wed 27 dec 3 hours
 thu 2 jan 2 hours
-thu 2 jan 4 hours
-
+fri 3 jan 6 hours
 -- 6 jours
 
-done: finish formations
-todo: finish use form with good params
+=================================
 todo: next on 1 line if alone + order by index
-todo: github with images per format
+todo: https://nextjs.org/docs/app/api-reference/file-conventions/metadata/robots
+todo: https://www.olfactotherapie.com/olfactocoaching/qu-est-ce-que-l-olfactocoaching/eeee
+
+=================================
+Meta Tags Implementation:
+
+Meta Titles and Descriptions: Ensure each page has unique and descriptive meta titles and descriptions to improve search engine understanding and click-through rates.
+Open Graph and Twitter Cards: Implement these tags to enhance link previews on social media platforms.
+Structured Data:
+
+Schema Markup: Incorporate JSON-LD structured data to provide search engines with detailed information about your content, enhancing rich snippet eligibility.
+Sitemap and Robots.txt:
+
+XML Sitemap: Generate and submit an XML sitemap to search engines to facilitate better crawling.
+Robots.txt: Ensure this file is correctly configured to guide search engine crawlers appropriately.
+Performance Optimization:
+
+Image Optimization: Utilize Next.js's <Image> component to serve optimized images, improving load times.
+Code Splitting and Lazy Loading: Implement these techniques to enhance page load speed, positively impacting SEO.
+Mobile-Friendliness:
+
+Responsive Design: Ensure your app is fully responsive and provides a seamless experience across all device types.
+URL Structure:
+
+Clean URLs: Maintain readable and descriptive URLs without unnecessary parameters or file extensions.
+Internal Linking:
+
+Navigation: Create a logical internal linking structure to help users and search engines navigate your site effectively.
+Content Optimization:
+
+Keyword Integration: Incorporate relevant keywords naturally within your content to improve search visibility.
+Regular Updates: Keep your content fresh and up-to-date to encourage return visits and signal relevance to search engines.
+Analytics and Monitoring:
+
+Google Analytics and Search Console: Set up these tools to monitor traffic, user behavior, and identify potential SEO issues.
+
+
